@@ -24,15 +24,18 @@ export function App() {
 
     return (
         <>
+            <GlobalStyle />
 
             <Header onOpenNewTransactionModal={HandleOpenNewTransactionModal} />
+            
             <Dashboard />
 
             <NewTransactioModal
                 isOpen={isNewTransactionModalOpen}
                 onRequestClose={HandleCloseNewTransactionModal}
             />
-            <GlobalStyle />
+
+
 
         </>
     );
